@@ -1,0 +1,9 @@
+os
+discord
+sqlite3
+shutil
+asyncio
+global_data
+emojis
+logging
+logging.handlers
