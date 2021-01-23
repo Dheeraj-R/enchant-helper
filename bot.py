@@ -29,7 +29,7 @@ logger.addHandler(handler)
 
 # Read the bot token from the .env file
 load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+
 
 # Set name of database files
 dbfile = global_data.dbfile
@@ -521,4 +521,4 @@ async def shutdown(ctx):
         else:
             await ctx.send(f'Phew, was afraid there for a second.')
 
-bot.run(TOKEN)
+bot.run(os.getenv('DISCORD_TOKEN'))
