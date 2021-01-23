@@ -1,5 +1,4 @@
 discord
-sqlite3
 shutil
 asyncio
 global_data
