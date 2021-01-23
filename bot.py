@@ -10,7 +10,7 @@ import emojis
 import logging
 import logging.handlers
 
-from dotenv import load_dotenv
+
 from discord.ext import commands, tasks
 from datetime import datetime
 from discord.ext.commands import CommandNotFound
