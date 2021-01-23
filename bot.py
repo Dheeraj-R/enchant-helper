@@ -10,7 +10,7 @@ import emojis
 import logging
 import logging.handlers
 
-
+from dotenv import load_dotenv
 from discord.ext import commands, tasks
 from datetime import datetime
 from discord.ext.commands import CommandNotFound
@@ -29,7 +29,7 @@ logger.addHandler(handler)
 
 # Read the bot token from the .env file
 load_dotenv()
-
+TOKEN = os.getenv('DISCORD_TOKEN')
 
 # Set name of database files
 dbfile = global_data.dbfile
@@ -521,4 +521,4 @@ async def shutdown(ctx):
         else:
             await ctx.send(f'Phew, was afraid there for a second.')
 
-bot.run(os.getenv('DISCORD_TOKEN'))
+bot.run(TOKEN)
